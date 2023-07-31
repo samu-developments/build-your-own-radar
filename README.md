@@ -1,3 +1,19 @@
+Forked from https://github.com/thoughtworks/build-your-own-radar
+
+## Deploy
+
+Build locally:
+```
+docker build -t capra-tech-radar .
+```
+
+Run locally:
+```
+docker run --rm -p 8080:80 -e QUADRANTS="[\"Backend\", \"Frontend\", \"Arkitektur\", \"Plattform\"]" -e RINGS="[\"1\", \"2\", \"3\", \"4\"]" -e API_KEY="<key>" -e CLIENT_ID="<id>.apps.googleusercontent.com" capra-tech-radar:latest
+```
+
+
+
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/thoughtworks/build-your-own-radar?sort=semver)](https://github.com/thoughtworks/build-your-own-radar/releases/latest)
 [![Thoughtworks](https://circleci.com/gh/thoughtworks/build-your-own-radar.svg?style=shield)](https://circleci.com/gh/thoughtworks/build-your-own-radar)
 [![Stars](https://badgen.net/github/stars/thoughtworks/build-your-own-radar)](https://github.com/thoughtworks/build-your-own-radar)

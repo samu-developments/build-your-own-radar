@@ -196,7 +196,7 @@ const GoogleSheet = function (sheetReference, sheetName) {
   }
 
   self.init = function () {
-    plotLoading()
+    // plotLoading()
     return self
   }
 
